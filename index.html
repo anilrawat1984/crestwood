@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crestwood Play & Care | Preschool & Day Care, Raj Nagar Extension</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2a6f;--blue:#1565d8;--org:#f5a623;--grn:#2e9e3a;--red:#e0405a;--bg:#f6f9fc;--ink:#1d2a44}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Nunito Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;color:#17243a;background:#fff;line-height:1.65}
+h1,h2,h3,.brand b{font-family:inherit;font-weight:800;color:var(--navy);line-height:1.3}
+a{color:inherit;text-decoration:none}
+.w{max-width:1100px;margin:auto;padding:0 20px}
+.top{background:var(--navy);color:#fff;font-size:13px;padding:8px 0}
+.top .w{display:flex;gap:6px 12px;flex-wrap:wrap;align-items:center;justify-content:center}
+.pill{background:#ffd43b;color:#5a3d00;border-radius:20px;padding:2px 10px;font-weight:700}
+header{position:sticky;top:0;z-index:9;background:#fff;box-shadow:0 2px 12px #0b2a6f16}
+header .w{display:flex;align-items:center;justify-content:space-between;padding-top:10px;padding-bottom:10px;gap:10px}
+.brand{display:flex;gap:10px;align-items:center}
+.brand>span{min-width:0}
+.logo{width:46px;height:46px;border-radius:50%;background:#fff;border:2px solid var(--grn);display:block;object-fit:cover;flex:none}
+.brand b{font-size:19px;font-weight:600;display:block}.brand b i{font-style:normal;color:var(--grn)}.brand b u{text-decoration:none;color:var(--org)}
+.brand small{font-size:12px;color:#465164}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{padding:8px 14px;border-radius:20px;font-weight:700;font-size:15px;transition:background-color .2s,color .2s}
+nav a.on{background:var(--blue);color:#fff}
+nav a.adm{background:var(--org);color:#fff}nav a.adm.on{background:var(--red)}
+.btn{display:inline-block;border:0;cursor:pointer;font:700 15px "Nunito Sans",system-ui,sans-serif;padding:12px 24px;border-radius:30px;color:#fff;background:var(--blue);box-shadow:0 6px 14px #1565d833;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #1565d844}
+.btn.g{background:var(--grn);box-shadow:0 6px 14px #2e9e3a44}.btn.o{background:#fff;color:var(--navy);border:2px solid var(--navy);box-shadow:none}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.hero{background:linear-gradient(120deg,#1565d8,#24a99a);color:#fff;text-align:center;padding:56px 0 80px;clip-path:ellipse(120% 100% at 50% 0)}
+.hero h1{color:#fff;font-size:clamp(30px,5vw,46px);font-weight:800}.hero p{opacity:1;max-width:640px;margin:10px auto 0}
+.hero.or{background:linear-gradient(135deg,#e8505b,#f5a623)}.crumb{font-size:14px;margin-bottom:6px;opacity:1}
+section{padding:clamp(44px,6vw,68px) 0}.alt{background:var(--bg)}
+.sh{text-align:center;margin-bottom:30px}.sh h2{font-size:clamp(26px,4vw,34px)}.sh p{color:#555;max-width:620px;margin:8px auto 0}
+.tag{display:inline-block;font-size:14px;font-weight:700;color:#925400;margin-bottom:4px}
+.badge{display:inline-block;color:#fff;font-weight:700;font-size:14px;padding:5px 14px;border-radius:20px;background:var(--blue);margin-bottom:10px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:#fff;border:1px solid #e9eef5;border-radius:18px;padding:24px;box-shadow:0 8px 24px #0b2a6f0d}
+.card h3{font-size:19px;margin-bottom:6px}.card p{font-size:16px;color:#39465a}
+.ic{font-size:28px;width:52px;height:52px;display:grid;place-items:center;background:var(--bg);border-radius:14px;margin-bottom:10px}
+.tc{border-top:5px solid var(--c,var(--org));text-align:center}.tc .ic{margin:0 auto 10px}
+.split{display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center}
+.hs{font-size:clamp(36px,5vw,52px);font-weight:900;line-height:1.2}.hs i{font-style:normal}
+.poster{width:100%;aspect-ratio:3/4;max-width:420px;margin:auto;border-radius:22px;background:linear-gradient(160deg,#5ec8ff,#7ee08a);display:grid;place-items:center;text-align:center;padding:20px;color:var(--navy);font-family:inherit;font-size:26px;box-shadow:0 14px 34px #0b2a6f33;position:relative;overflow:hidden}
+.poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.home-poster{aspect-ratio:803/768;max-width:500px}
+.home-poster img{object-fit:contain}
+.chk{list-style:none;padding:0}.chk li{padding:5px 0 5px 32px;position:relative;font-size:16px}
+.chk li:before{content:"✓";position:absolute;left:0;top:7px;width:22px;height:22px;border-radius:50%;background:var(--grn);color:#fff;font-size:13px;display:grid;place-items:center}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}.stat{text-align:center;padding:18px}.stat b{font:800 28px "Nunito Sans",system-ui,sans-serif;color:var(--c,var(--grn));display:block}.stat span{font-size:15px;color:#39465a}
+.vis{background:linear-gradient(120deg,#168044,#22a879);color:#fff;border-radius:22px;padding:32px}.vis h3{color:#fff}.vis p{font:600 19px/1.6 "Nunito Sans",system-ui,sans-serif;margin:10px 0 16px}
+.offer{background:linear-gradient(90deg,#e0405a,#f5a623);color:#fff;border-radius:22px;padding:26px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:24px}.offer h3{color:#fff;font-size:26px}
+.cta{background:linear-gradient(135deg,#1565d8,#5b6bdc);color:#fff;text-align:center;padding:56px 0}.cta h2{color:#fff;font-size:32px}.cta p{margin:8px 0 20px}.cta .btn{margin:4px}
+.av{width:100px;height:100px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;color:#fff;font:700 38px "Nunito Sans",system-ui,sans-serif;background:var(--c)}
+.role{color:#925400;font-weight:700;font-size:14px}
+.quote{border-left:5px solid var(--org);background:#fff;border-radius:14px;padding:20px 24px;margin-top:18px;box-shadow:0 6px 22px #0b2a6f14}
+.day{width:100%;border-collapse:collapse}.day td{padding:12px;border-bottom:1px dashed #cfd8e6;font-size:16px}.day td:first-child{font-weight:700;color:var(--navy);width:130px}
+table.age{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 22px #0b2a6f14}
+.age th{background:var(--blue);color:#fff;text-align:left;padding:12px 16px}.age td{padding:12px 16px;border-top:1px solid #e6edf6;font-size:15px}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}.steps .card{text-align:center}.n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--org);color:#fff;font-weight:700;margin-bottom:6px}
+details{background:#fff;border-radius:14px;padding:14px 18px;margin-bottom:10px;box-shadow:0 4px 14px #0b2a6f12}
+summary{cursor:pointer;font-weight:700;color:var(--navy)}details p{margin-top:8px;font-size:14px;color:#555}
+form{display:grid;gap:14px;grid-template-columns:1fr 1fr}form .f{grid-column:1/-1}
+label{font-size:13px;font-weight:700;color:var(--navy);display:block;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;padding:11px 12px;border:1.5px solid #d3dcea;border-radius:12px;background:#fff}
+.note{font-size:14px;color:#465164}.ok{color:var(--grn);font-weight:700}
+.info{display:flex;gap:14px;margin:16px 0}.info .ic{flex:none;margin:0}
+iframe{width:100%;height:340px;border:0;border-radius:18px}
+footer{background:#0a2463;color:#fff;padding:44px 0 18px;font-size:14px}
+footer .grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}footer h4{font:800 17px "Nunito Sans",system-ui,sans-serif;margin-bottom:10px}footer a{display:block;padding:3px 0;opacity:.9}
+.copy{border-top:1px solid #ffffff2e;margin-top:24px;padding-top:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px}
+.wa{position:fixed;right:18px;bottom:18px;width:52px;height:52px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:26px;box-shadow:0 6px 16px #0003;z-index:9}
+.pg{display:none}.pg.on{display:block}
+@media(max-width:640px){body{font-size:16px}.top .w{font-size:12px;gap:6px 14px}header .w{align-items:flex-start;flex-direction:column}.brand{gap:8px}.brand b{font-size:17px;white-space:nowrap}.brand small{font-size:11px;white-space:nowrap}nav{width:100%;justify-content:space-between;gap:2px}nav a{padding:7px 9px;font-size:13px}.hs{font-size:clamp(34px,9vw,42px)}.stats{gap:10px}.stat{padding:14px}.card{padding:20px}}
+@media(prefers-reduced-motion:no-preference){.pg.on{animation:in .35s ease}@keyframes in{from{opacity:0}}}
+</style>
+</head>
+<body>
+<div class="top"><div class="w">
+<a href="tel:+918447154716">📞 +91 84471 54716</a><a href="tel:+919971286312">📞 +91 99712 86312</a><a href="mailto:crestwoodplaycare@gmail.com">✉ crestwoodplaycare@gmail.com</a><span>📍 G1-003, Palm Resort, Raj Nagar Extension</span><span class="pill">Admissions Open 2026-27 &amp; 2027-28</span></div></div>
+<header><div class="w">
+<a href="#home" class="brand"><img class="logo" src="crestwood-logo.png" alt="Crestwood Play &amp; Care logo"><span><b>Crestwood <i>Play</i> <u>&amp; Care</u></b><small>Growing Young Minds with Care &amp; Joy</small></span></a>
+<nav id="nav"></nav></div></header>
+
+<main>
+<!-- HOME -->
+<div class="pg" id="home">
+<section style="padding:48px 0 30px;background:linear-gradient(180deg,#d9eefb,#fff)"><div class="w split">
+<div>
+<span class="badge" style="background:var(--red)">Admissions Open 2026-27 &amp; 2027-28</span> <span class="badge" style="background:#ffd43b;color:#5a3d00">🎁 Inaugural Offer</span>
+<h1 class="hs">Growing Young Minds with <i style="color:var(--org)">Care</i> &amp; <i style="color:var(--red)">Joy</i></h1>
+<p style="margin:14px 0 22px;color:#444">Welcome to <b>Crestwood Play &amp; Care</b> — a warm, safe and playful preschool &amp; day care at Palm Resort, Raj Nagar Extension, where every little learner is loved, encouraged and inspired.</p>
+<a class="btn" href="#admissions">Enroll Now</a> <a class="btn o" href="#contact">Book a School Visit</a></div>
+<div class="poster home-poster"><img src="crestwood-homepage.jpg" alt="Crestwood Play &amp; Care admissions poster"></div>
+</div></section>
+
+<section><div class="w split">
+<div><span class="badge" style="background:var(--grn)">Welcome to Crestwood</span>
+<h2 style="font-size:34px;margin-bottom:12px">A happy second home for your little one</h2>
+<p style="margin-bottom:10px">At Crestwood Play &amp; Care we believe the early years are the most important years of learning. Our child-friendly campus, caring teachers and thoughtfully planned activities help children explore, discover and grow at their own pace.</p>
+<p style="margin-bottom:20px">From the first wobbly steps of <b>Playgroup</b> to a confident, school-ready <b>UKG</b> graduate — and a cosy <b>Day Care</b> for working parents — we are with your child at every step.</p>
+<a class="btn g" href="#about">Know More About Us</a></div>
+<div class="stats" id="stats"></div></div></section>
+
+<section class="alt"><div class="w"><div class="sh"><span class="tag">Our Programs</span><h2>Learning made joyful at every age</h2><p>Age-appropriate programs designed to build curiosity, confidence and strong foundations.</p></div>
+<div class="grid" id="progCards"></div></div></section>
+
+<section><div class="w"><div class="sh"><span class="tag">Why Crestwood?</span><h2>Everything your child needs to shine</h2></div>
+<div class="grid" id="why"></div></div></section>
+
+<section class="alt"><div class="w"><div class="sh"><span class="tag">Our Campus</span><h2>Spaces made for little explorers</h2><p>Every corner of Crestwood is designed to help children learn, play and rest safely.</p></div>
+<div class="grid" id="campus"></div><p style="text-align:center;margin-top:24px"><a class="btn o" href="#facilities">Explore All Facilities</a></p></div></section>
+
+<section><div class="w"><div class="vis"><h3>🌟 Our Vision</h3><p>“To nurture happy, curious and confident children by providing a safe, loving and stimulating environment where every child learns through play, discovers their unique potential and builds a strong foundation for life.”</p><a class="btn" href="#about">Read More</a></div>
+<div class="offer"><div><h3>🎉 Inaugural Offer — Limited Time!</h3><p>Admissions are open for Playgroup, Nursery, LKG, UKG &amp; Day Care. Secure your child's seat today.</p></div><a class="btn" style="background:#fff;color:var(--red)" href="#admissions">Apply Now →</a></div></div></section>
+<div class="cta"><div class="w"><h2>Come visit us at Palm Resort!</h2><p>We'd love to show you around our campus and answer all your questions. Call us or drop us a message.</p><a class="btn" href="tel:+918447154716">📞 +91 84471 54716</a><a class="btn g" href="#contact">✉ Send us a Message</a></div></div>
+</div>
+
+<!-- ABOUT -->
+<div class="pg" id="about">
+<div class="hero"><div class="w"><div class="crumb">Home / About Us</div><h1>About Crestwood Play &amp; Care</h1><p>Growing young minds with care &amp; joy — right in the heart of Palm Resort, Raj Nagar Extension.</p></div></div>
+<section><div class="w split"><div><span class="badge">Who We Are</span><h2 style="font-size:32px;margin-bottom:12px">Introduction</h2>
+<p style="margin-bottom:10px"><b>Crestwood Play &amp; Care</b> is a preschool and day care centre located at <b>Center G1-003, Palm Resort, Raj Nagar Extension, Ghaziabad</b>. We offer <b>Playgroup, Nursery, LKG</b> and <b>UKG</b> programs along with a full <b>Day Care</b> facility for working parents.</p>
+<p style="margin-bottom:10px">Our campus has thoughtfully designed spaces — a <b>class corner</b> for focused learning, an <b>activity corner</b> for creativity, a safe <b>play area</b> and a peaceful <b>dormitory</b> where day care children can rest. The entire premises is under <b>CCTV surveillance</b>, so parents can be assured of their child's safety.</p>
+<p>We follow a play-based, activity-oriented approach where children learn by doing, exploring and having fun — building strong foundations in language, numbers, social skills and confidence.</p></div>
+<img class="logo" src="crestwood-logo.png" alt="Crestwood Play &amp; Care logo" style="width:240px;height:240px;border-width:4px;margin:auto"></div></section>
+<section class="alt"><div class="w"><div class="sh"><span class="tag">Crestwood Vision</span><h2>What we dream for every child</h2></div>
+<div class="vis"><h3>🌟 Our Vision</h3><p>“To nurture happy, curious and confident children by providing a safe, loving and stimulating environment where every child learns through play, discovers their unique potential and builds a strong foundation for life.”</p></div>
+<div class="grid" style="margin-top:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="card"><div class="ic">🎯</div><h3>Our Mission</h3><ul class="chk"><li>Provide a safe, hygienic and secure environment where children feel at home.</li><li>Make learning joyful through play, stories, music, art and hands-on activities.</li><li>Develop every child's social, emotional, physical and cognitive skills.</li><li>Prepare children to step confidently into formal schooling.</li><li>Partner closely with parents in their child's growth journey.</li></ul></div>
+<div class="card"><div class="ic">🌱</div><h3>Our Approach</h3><ul class="chk"><li><b>Learning through play</b> – children learn best when they are having fun.</li><li><b>Child-centric</b> – every child grows at their own pace and in their own way.</li><li><b>Activity based</b> – hands-on experiences in our activity corner.</li><li><b>Values &amp; manners</b> – sharing, kindness, respect and good habits.</li><li><b>Care beyond class</b> – a nurturing day care for working families.</li></ul></div></div></div></section>
+<section><div class="w"><div class="sh"><span class="tag">Our Values</span><h2>The Crestwood way</h2></div><div class="grid" id="values"></div></div></section>
+<section class="alt"><div class="w"><div class="sh"><span class="tag">Our Management</span><h2>Meet the people behind Crestwood</h2><p>Crestwood is led by a passionate team committed to quality early-childhood education and care.</p></div>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="card" style="text-align:center"><div class="av" style="--c:var(--blue)">D</div><h3>[Director's Name]</h3><div class="role">Founder &amp; Director</div><p>With a deep belief that the early years shape a lifetime, our Director founded Crestwood Play &amp; Care to give the children of Raj Nagar Extension a safe, joyful and enriching place to learn and grow.</p></div>
+<div class="card" style="text-align:center"><div class="av" style="--c:var(--grn)">C</div><h3>[Centre Head's Name]</h3><div class="role">Centre Head &amp; Academic Coordinator</div><p>Our Centre Head oversees daily operations, curriculum planning and teacher development, ensuring every child receives individual attention and every parent stays informed.</p></div></div>
+<div class="quote"><b>💬 Message from the Director</b><p style="margin-top:6px">“Dear Parents, every child is unique and full of wonder. At Crestwood, our promise is simple — to love, protect and inspire your child as our own. We have created a space where little ones feel safe, laugh freely and learn joyfully. We look forward to welcoming your family into the Crestwood family.” — [Director's Name], Founder &amp; Director</p></div></div></section>
+<section><div class="w"><div class="sh"><span class="tag">Our Staff</span><h2>A caring team for your little ones</h2><p>Our team is carefully selected for their warmth, patience and love for children.</p></div><div class="grid" id="staff"></div></div></section>
+</div>
+
+<!-- PROGRAMS -->
+<div class="pg" id="programs">
+<div class="hero"><div class="w"><div class="crumb">Home / Programs</div><h1>Our Programs</h1><p>Age-appropriate, play-based programs that build strong foundations for school and for life.</p></div></div>
+<div id="progList"></div>
+<section class="alt"><div class="w"><div class="card" style="text-align:center;margin-bottom:30px"><span class="badge" style="background:var(--grn)">Day Care</span><h2 style="margin-bottom:6px">Safe, Caring &amp; Nurturing Day Care</h2><p style="max-width:620px;margin:0 auto 20px">A home away from home for children of working parents — with loving caregivers, a comfortable dormitory for rest and a fully CCTV-monitored campus.</p>
+<div class="grid" id="dcare" style="text-align:left"></div><p style="margin-top:20px"><a class="btn" href="#admissions">Enquire for Day Care</a></p></div>
+<div class="split"><div><span class="badge" style="background:#ffd43b;color:#5a3d00">A Day at Crestwood</span><h2 style="font-size:32px;margin-bottom:8px">What a typical day looks like</h2><p>A sample routine for our preschool children. Timings may vary by program and are shared with parents at admission.</p></div>
+<table class="day" id="day"></table></div></div></section>
+<div class="cta"><div class="w"><h2>Find the right program for your child</h2><p>Not sure which program fits best? Talk to us — we're happy to guide you.</p><a class="btn" href="#admissions">Admission Details</a><a class="btn g" href="tel:+918447154716">📞 Call Us</a></div></div>
+</div>
+
+<!-- FACILITIES -->
+<div class="pg" id="facilities">
+<div class="hero"><div class="w"><div class="crumb">Home / Facilities</div><h1>Our Facilities</h1><p>Safe, clean and child-friendly spaces designed for learning, play and rest.</p></div></div>
+<section><div class="w"><div class="grid" id="fac"></div></div></section>
+<section class="alt"><div class="w split"><div><span class="badge" style="background:var(--red)">Safety First</span><h2 style="font-size:32px;margin-bottom:10px">Your child's safety is our priority</h2><p style="margin-bottom:10px">We understand how important it is for parents to feel confident about where their child spends the day. That's why safety is built into everything we do at Crestwood.</p>
+<ul class="chk"><li>Entire premises covered by CCTV security cameras</li><li>Secure, gated campus inside Palm Resort</li><li>Children handed over only to parents or authorised guardians</li><li>Child-safe furniture, rounded edges and covered sockets</li><li>First-aid kit and trained staff on campus</li><li>Constant adult supervision in class, play and rest areas</li></ul></div>
+<div class="card" style="text-align:center;max-width:320px;margin:auto"><div style="font-size:72px">🛡️</div><h3>CCTV Enabled Campus</h3><p>Safe · Secure · Supervised</p></div></div></section>
+<div class="cta"><div class="w"><h2>See our campus in person</h2><p>Schedule a visit and let your child experience Crestwood first-hand.</p><a class="btn" href="#contact">📅 Book a Visit</a><a class="btn g" href="#admissions">Admissions</a></div></div>
+</div>
+
+<!-- ADMISSIONS -->
+<div class="pg" id="admissions">
+<div class="hero or"><div class="w"><div class="crumb">Home / Admissions</div><h1>Admissions Open 2026-27 &amp; 2027-28</h1><p>Playgroup · Nursery · LKG · UKG · Day Care — avail our limited-time Inaugural Offer!</p></div></div>
+<section><div class="w split"><div><span class="badge" style="background:var(--grn)">Join the Crestwood Family</span><h2 style="font-size:32px;margin-bottom:10px">Admissions at Crestwood Play &amp; Care</h2>
+<p style="margin-bottom:10px">We are delighted that you are considering Crestwood Play &amp; Care for your child. Admissions are now open for the 2026-27 and 2027-28 academic sessions for <b>Playgroup, Nursery, LKG and UKG</b>, and throughout the year for <b>Day Care</b>.</p>
+<p style="margin-bottom:14px">Seats in each class are limited to ensure individual attention for every child, so we encourage parents to complete the admission process early.</p>
+<div class="quote" style="margin:0 0 18px;background:#fff6e0"><b>🎁 Inaugural Offer — Limited Time!</b> Special admission benefits for our founding batch. Call us or submit the enquiry form below to know more.</div>
+<a class="btn" href="#enq" data-scroll>Apply / Enquire Now</a> <a class="btn o" href="tel:+918447154716">📞 +91 84471 54716</a></div>
+<div class="poster"><img src="crestwood_poster_hires.jpg" alt="Crestwood admissions and inaugural offer poster"></div></div></section>
+<section class="alt"><div class="w"><div class="sh"><span class="tag">Programs &amp; Age Criteria</span><h2>Which class is right for my child?</h2><p>Age is calculated as on <b>31st March</b> of the admission year.</p></div>
+<table class="age" id="age"></table><p class="note" style="text-align:center;margin-top:12px">Age criteria may be relaxed slightly at the discretion of the management. Please speak to us if your child's age falls between two classes.</p></div></section>
+<section><div class="w"><div class="sh"><span class="tag">Admission Process</span><h2>5 simple steps to join Crestwood</h2></div><div class="steps" id="steps"></div></div></section>
+<section class="alt"><div class="w grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
+<div class="card"><div class="ic">📁</div><h3>Documents Required</h3><ul class="chk" style="margin-top:8px"><li>Duly filled admission form</li><li>Child's birth certificate (copy)</li><li>Child's Aadhaar card (copy, if available)</li><li>4 recent passport-size photographs of the child</li><li>2 passport-size photographs each of both parents / guardians</li><li>Aadhaar card / ID proof of parents (copy)</li><li>Address proof (copy)</li><li>Child's immunisation / vaccination record (copy)</li><li>Medical information or allergies, if any</li></ul><p class="note" style="margin-top:8px">Please carry the originals for verification at the time of admission.</p></div>
+<div class="card"><div class="ic">💰</div><h3>Fee Structure</h3><p style="margin:6px 0 10px">Our fee structure is affordable and transparent. Fee details vary by program and day care plan, and are shared during your campus visit or over a call.</p><ul class="chk"><li>One-time admission / registration charges</li><li>Tuition fee payable monthly or quarterly</li><li>Day care plans to suit working parents</li><li><b>Special inaugural offer</b> for a limited time</li><li>Sibling benefits — ask us!</li></ul><div class="quote" style="background:#fff6e0;font-size:14px">📞 For the latest fee details please call +91 84471 54716 / +91 99712 86312 or email crestwoodplaycare@gmail.com.</div></div></div></section>
+<section><div class="w" style="max-width:760px"><div class="sh"><span class="tag">FAQs</span><h2>Frequently asked questions</h2></div><div id="faq"></div></div></section>
+<section class="alt" id="enq"><div class="w" style="max-width:760px"><div class="sh"><span class="tag">Admission Enquiry</span><h2>Apply / Enquire Now</h2><p>Fill in the details below and our admissions team will get in touch with you shortly.</p></div>
+<form class="card" id="f1" data-subj="Admission Enquiry">
+<div><label for="a1">Parent / Guardian Name *</label><input id="a1" name="Parent" required></div>
+<div><label for="a2">Mobile Number *</label><input id="a2" name="Mobile" type="tel" pattern="[0-9+ ]{10,14}" placeholder="e.g. 98XXXXXXXX" required></div>
+<div><label for="a3">Email Address *</label><input id="a3" name="Email" type="email" required></div>
+<div><label for="a4">Child's Name *</label><input id="a4" name="Child" required></div>
+<div><label for="a5">Child's Date of Birth *</label><input id="a5" name="DOB" type="date" required></div>
+<div><label for="a6">Program *</label><select id="a6" name="Program" required><option value="">Select a program</option><option>Day Care</option><option>Playgroup</option><option>Nursery</option><option>LKG</option><option>UKG</option></select></div>
+<div><label for="a7">Academic Session *</label><select id="a7" name="Session" required><option value="">Select a session</option><option>2026-27</option><option>2027-28</option></select></div>
+<div><label for="a8">Preferred Campus Visit Date</label><input id="a8" name="Visit date" type="date"></div>
+<div class="f"><label for="a9">Message / Questions</label><textarea id="a9" name="Message" rows="4" placeholder="Anything you'd like us to know?"></textarea></div>
+<div class="f"><button class="btn" type="submit">Submit Enquiry</button> <span class="ok" role="status"></span><p class="note" style="margin-top:8px">Your details are sent to crestwoodplaycare@gmail.com and are used only to respond to your enquiry.</p></div></form></div></section>
+</div>
+
+<!-- CONTACT -->
+<div class="pg" id="contact">
+<div class="hero"><div class="w"><div class="crumb">Home / Contact Us</div><h1>Contact Us</h1><p>We'd love to hear from you! Call, visit or send us a message — we'll get back to you soon.</p></div></div>
+<section><div class="w split" style="align-items:start"><div><span class="badge" style="background:var(--grn)">Get In Touch</span><h2 style="font-size:32px;margin-bottom:8px">Crestwood Play &amp; Care</h2><p>Have a question about admissions, programs or day care? Reach out to us through any of the options below.</p>
+<div class="info"><div class="ic">📍</div><div><b>Visit Us</b><br>Center G1-003, Palm Resort,<br>Raj Nagar Extension, Ghaziabad, Uttar Pradesh</div></div>
+<div class="info"><div class="ic">📞</div><div><b>Call Us</b><br><a href="tel:+918447154716">+91 84471 54716</a><br><a href="tel:+919971286312">+91 99712 86312</a><br><a href="tel:01236531522">0120-36531522</a></div></div>
+<div class="info"><div class="ic">✉️</div><div><b>Email Us</b><br><a href="mailto:crestwoodplaycare@gmail.com">crestwoodplaycare@gmail.com</a></div></div>
+<div class="info"><div class="ic">💬</div><div><b>WhatsApp</b><br><a href="https://wa.me/918447154716" target="_blank" rel="noopener">Chat with us on WhatsApp</a></div></div>
+<div class="info"><div class="ic">🕒</div><div><b>Campus Visits</b><br>Please call us to schedule a convenient time for your campus visit.</div></div></div>
+<form class="card" id="f2" data-subj="Website Message"><h3 class="f" style="font-size:22px">Send us a Message</h3><p class="f note" style="margin-top:-8px">Your message will be emailed directly to our team.</p>
+<div><label for="c1">Your Name *</label><input id="c1" name="Name" required></div>
+<div><label for="c2">Mobile Number *</label><input id="c2" name="Mobile" type="tel" placeholder="e.g. 98XXXXXXXX" required></div>
+<div class="f"><label for="c3">Email Address *</label><input id="c3" name="Email" type="email" required></div>
+<div class="f"><label for="c4">Subject *</label><select id="c4" name="Subject" required><option value="">Select a subject</option><option>Admissions</option><option>Day Care</option><option>Campus visit</option><option>Other</option></select></div>
+<div class="f"><label for="c5">Message *</label><textarea id="c5" name="Message" rows="5" required></textarea></div>
+<div class="f"><button class="btn g" type="submit">Send Message</button> <span class="ok" role="status"></span></div></form></div></section>
+<section class="alt"><div class="w"><div class="sh"><span class="tag">Find Us</span><h2>Palm Resort, Raj Nagar Extension</h2></div>
+<iframe title="Map of Palm Resort, Raj Nagar Extension" loading="lazy" src="https://www.google.com/maps?q=Palm+Resort+Raj+Nagar+Extension+Ghaziabad&output=embed"></iframe>
+<p style="text-align:center;margin-top:20px"><a class="btn o" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Palm+Resort+Raj+Nagar+Extension+Ghaziabad">Get Directions</a></p></div></section>
+</div>
+</main>
+
+<footer><div class="w"><div class="grid">
+<div><img class="logo" src="crestwood-logo.png" alt="Crestwood Play &amp; Care logo" style="width:70px;height:70px;margin-bottom:10px"><p>Crestwood Play &amp; Care is a safe, joyful and nurturing preschool &amp; day care at Palm Resort, Raj Nagar Extension, Ghaziabad — growing young minds with care &amp; joy.</p></div>
+<div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About Us</a><a href="#about">Our Vision</a><a href="#about">Management &amp; Staff</a><a href="#facilities">Facilities</a><a href="#admissions">Admissions</a><a href="#contact">Contact Us</a></div>
+<div><h4>Our Programs</h4><a href="#programs">Playgroup</a><a href="#programs">Nursery</a><a href="#programs">LKG</a><a href="#programs">UKG</a><a href="#programs">Day Care</a></div>
+<div><h4>Reach Us</h4><p>📍 Center G1-003, Palm Resort, Raj Nagar Extension, Ghaziabad, Uttar Pradesh</p><p>📞 +91 84471 54716<br>&nbsp;&nbsp;&nbsp;&nbsp;+91 99712 86312</p><p>☎ 0120-36531522</p><p>✉ crestwoodplaycare@gmail.com</p></div></div>
+<div class="copy"><span>© 2026 Crestwood Play &amp; Care. All rights reserved.</span><span>Made with ❤️ for little learners</span></div></div></footer>
+<a class="wa" href="https://wa.me/918447154716" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<script>
+const $=s=>document.querySelector(s),H=(id,h)=>$(id).innerHTML=h;
+const pages=[["home","Home"],["about","About Us"],["programs","Programs"],["facilities","Facilities"],["contact","Contact Us"],["admissions","Admissions"]];
+const P=[["Day Care","1.5 yrs & above","Safe, caring & nurturing","🏠","#f5a623"],["Playgroup","2 – 3 yrs","Learn through play","🧸","#1565d8"],["Nursery","3 – 4 yrs","Early learning & fun","📖","#e0405a"],["LKG","4 – 5 yrs","Foundational skills & creativity","✏️","#2e9e3a"],["UKG","5 – 6 yrs","School readiness & growth","🎓","#5b4bdc"]];
+H("#stats",[["5","Programs from Playgroup to UKG + Day Care","#f5a623"],["100%","CCTV-covered premises","#2e9e3a"],["4","Dedicated zones: class, activity, play & rest","#1565d8"],["❤️","Caring & nurturing teachers","#e0405a"]].map(s=>`<div class="card stat" style="--c:${s[2]}"><b>${s[0]}</b><span>${s[1]}</span></div>`).join(""));
+H("#progCards",P.map(p=>`<a href="#programs" class="card tc" style="--c:${p[4]}"><div class="ic">${p[3]}</div><h3 style="color:${p[4]}">${p[0]}</h3><small><b>${p[1]}</b></small><p>${p[2]}</p></a>`).join(""));
+H("#why",[["🧩","Interactive Learning","Hands-on and engaging learning experiences that make every concept fun to explore."],["🛡️","Secured Environment","A safe, hygienic and child-friendly campus designed with little ones in mind."],["🎨","Fun-Filled Activities","Music, art, dance, games and more to help children discover their talents."],["📹","CCTV Enabled Campus","The entire premises is covered by security cameras — your child's safety is our priority."],["😴","Day Care with Rest Dormitory","A calm, comfortable dormitory where day care children can rest and recharge."],["🤗","Caring Teachers","Warm, patient and dedicated educators who treat every child like their own."]].map(c=>`<div class="card"><div class="ic">${c[0]}</div><h3>${c[1]}</h3><p>${c[2]}</p></div>`).join(""));
+H("#campus",[["📚","Class Corner","Bright, cheerful classrooms with child-sized furniture and learning aids."],["🎨","Activity Corner","Art, craft, puzzles, blocks and sensory play to spark creativity."],["🛝","Play Area","A safe play zone for running, climbing and having fun with friends."],["🛏️","Dormitory","A peaceful rest room for day care children to nap comfortably."]].map(c=>`<div class="card"><div class="ic" style="width:100%;height:90px;font-size:48px">${c[0]}</div><h3>${c[1]}</h3><p>${c[2]}</p></div>`).join(""));
+H("#values",[["❤️","Care","Love, warmth and attention for every child.","#e0405a"],["🔍","Curiosity","Encouraging questions and exploration.","#1565d8"],["🎨","Creativity","Freedom to imagine, create and express.","#f5a623"],["💪","Confidence","Building self-belief, one step at a time.","#2e9e3a"],["🛡️","Safety","A secure, CCTV-monitored, child-safe space.","#5b4bdc"]].map(c=>`<div class="card tc" style="--c:${c[3]}"><div class="ic">${c[0]}</div><h3 style="color:${c[3]}">${c[1]}</h3><p>${c[2]}</p></div>`).join(""));
+H("#staff",[["🧑‍🏫","Early Childhood Teachers","Playgroup · Nursery · LKG · UKG","Trained, friendly educators who make learning fun with stories, rhymes, activities and individual attention.","#e0405a"],["🤱","Day Care Caregivers","Day Care","Gentle, attentive caregivers who look after meals, rest time, hygiene and play for our day care children.","#f5a623"],["🎵","Activity Facilitators","Art · Music · Dance · Games","Creative facilitators who help children explore art, music, movement and play-based learning.","#2e9e3a"],["🧹","Support Staff","Helpers & Housekeeping","Dedicated helpers who keep the campus clean and hygienic and assist children throughout the day.","#7a4fd6"],["💂","Security Staff","Safety & Surveillance","Ensuring secure entry and exit, with the entire premises monitored by CCTV cameras.","#1565d8"],["🧑‍💼","Front Office","Admissions & Parent Support","Here to help with admissions, campus visits and any questions parents may have.","#e8b800"]].map(c=>`<div class="card" style="text-align:center"><div class="av" style="--c:${c[4]};font-size:44px">${c[0]}</div><h3>${c[1]}</h3><div class="role">${c[2]}</div><p>${c[3]}</p></div>`).join(""));
+const L=[["Playgroup — Learn Through Play","Age: 2 – 3 years","The very first step into school life! Our Playgroup gently helps toddlers settle into a new environment, make friends and discover the joy of learning through play.",["Settling-in support and separation comfort","Rhymes, stories, music and movement","Sensory play, colours, shapes and sounds","Building early language and social skills","Developing fine & gross motor skills"],"🧸","#1565d8"],
+["Nursery — Early Learning & Fun","Age: 3 – 4 years","Nursery builds on curiosity with structured, joyful activities that introduce early literacy, numeracy and the world around us.",["Phonics, letter recognition and vocabulary","Number sense, counting and patterns","Art & craft, colouring and clay modelling","Show & tell to build confidence","Good habits, sharing and teamwork"],"📖","#e0405a"],
+["LKG — Foundational Skills & Creativity","Age: 4 – 5 years","In LKG, children strengthen their foundations in reading, writing and numbers while continuing to explore their creativity.",["Reading readiness, phonics and simple words","Pre-writing and writing practice","Numbers, simple addition and comparisons","Environmental awareness & general knowledge","Music, dance, art and festival celebrations"],"✏️","#2e9e3a"],
+["UKG — School Readiness & Growth","Age: 5 – 6 years","UKG prepares children to step confidently into Class 1 with strong academic basics, independence and communication skills.",["Reading simple sentences and stories","Neat writing, spelling and expression","Number operations, time, money and measurement","Logical thinking, puzzles and problem solving","Public speaking, independence and life skills"],"🎓","#5b4bdc"]];
+H("#progList",L.map((p,i)=>`<section class="${i%2?'alt':''}"><div class="w split" style="direction:${i%2?'rtl':'ltr'}"><div style="direction:ltr"><span class="badge" style="background:${p[5]}">${p[1]}</span><h2 style="font-size:30px;margin-bottom:10px">${p[0]}</h2><p style="margin-bottom:10px">${p[2]}</p><ul class="chk">${p[3].map(x=>`<li>${x}</li>`).join("")}</ul><p style="margin-top:16px"><a class="btn" href="#admissions">Enquire for ${p[0].split(" ")[0]}</a></p></div><div class="card" style="direction:ltr;text-align:center;font-size:90px;background:${p[5]}18">${p[4]}</div></div></section>`).join(""));
+H("#dcare",[["🍎","Meal & Snack Time","Supervised, hygienic meal and snack times with healthy eating habits."],["🛏️","Rest in Dormitory","A quiet, clean dormitory where children nap and recharge comfortably."],["🧩","Play & Activities","Indoor games, art, storytelling and play in our activity corner and play area."],["📚","Homework Help","Guided reading and homework support for older day care children."],["📹","CCTV Monitored","The entire premises is covered by security cameras for complete peace of mind."],["🕒","Flexible Plans","Plans to suit working parents — call us to discover the right option for you."]].map(c=>`<div class="card" style="background:var(--bg);box-shadow:none"><div class="ic" style="background:#fff">${c[0]}</div><h3>${c[1]}</h3><p>${c[2]}</p></div>`).join(""));
+H("#day",[["Arrival","🧸 Warm welcome, free play & settling in"],["Circle Time","🎵 Prayer, rhymes, greetings & sharing"],["Learning Time","📚 Class corner — letters, numbers & concepts"],["Snack Break","🍎 Healthy snacks & good eating habits"],["Activity Time","🎨 Art, craft, music, dance & puzzles"],["Outdoor Play","🛝 Fun & games in the play area"],["Story Time","📖 Stories, recap & goodbye song"],["Day Care","🍛 Lunch, rest in the dormitory, play & homework help"]].map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join(""));
+H("#fac",[["📚","Class Corner",["Bright, airy classrooms","Child-sized furniture","Learning aids and charts"]],["🎨","Activity Corner",["Art, craft and clay","Puzzles and blocks","Sensory play"]],["🛝","Play Area",["Safe slides and climbers","Space to run and play","Supervised play time"]],["🛏️","Dormitory",["Quiet, dimmable environment","Supervised by caregivers","Clean bedding"]],["🔒","Security",["Monitored entry & exit points","CCTV on entire premises","Complete peace of mind for parents"]],["🚻","Hygiene",["Child-friendly washrooms","Safe drinking water","Daily housekeeping"]]].map(c=>`<div class="card"><div class="ic">${c[0]}</div><h3>${c[1]}</h3><ul class="chk" style="margin-top:6px">${c[2].map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join(""));
+H("#age",`<tr><th>Program</th><th>Age Eligibility</th><th>Focus</th></tr>`+[["🧸 Playgroup","2 – 3 years","Learn through play, settling in, social & motor skills"],["📖 Nursery","3 – 4 years","Early learning & fun, phonics, numbers, creativity"],["✏️ LKG","4 – 5 years","Foundational skills, reading & writing readiness"],["🎓 UKG","5 – 6 years","School readiness, confidence & independence"],["🏠 Day Care","1.5 years & above","Safe, caring & nurturing care with rest in dormitory"]].map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join(""));
+H("#steps",[["📝","Enquiry","Fill the enquiry form below, call us or walk in to our centre."],["🏫","Campus Visit","Visit our campus with your child and meet our team."],["💬","Interaction","An informal, friendly interaction with the child and parents. No tests!"],["📁","Form & Documents","Submit the admission form along with the required documents."],["🎉","Fee & Confirmation","Pay the fee to confirm the seat and receive the welcome kit."]].map((s,i)=>`<div class="card"><span class="n">${i+1}</span><div style="font-size:30px">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p></div>`).join(""));
+H("#faq",[["For which sessions are admissions open?","Admissions are open for the 2026-27 and 2027-28 academic sessions for Playgroup, Nursery, LKG and UKG. Day Care admissions are open throughout the year, subject to availability."],["Is there an admission test for my child?","No. There is no test. We only have a short, friendly interaction with the child and parents so that we can understand your child better."],["Where is Crestwood Play & Care located?","We are located at Center G1-003, Palm Resort, Raj Nagar Extension, Ghaziabad. See the map on our Contact Us page."],["Is the campus safe and monitored?","Yes. The entire premises is covered with CCTV security cameras, and children are always supervised by our teachers and caregivers. Children are handed over only to parents or authorised guardians."],["Can my child rest during Day Care?","Absolutely. We have a dedicated, clean and quiet dormitory where day care children can nap and rest comfortably under supervision."],["Can preschool children also join Day Care after school hours?","Yes. Children enrolled in our preschool programs can seamlessly continue into Day Care after their class hours. Please ask us about combined plans."],["What is the inaugural offer?","We are offering special admission benefits for a limited period to our founding batch. Please call us or submit the enquiry form to know the current offer details."],["Can I visit the school before taking admission?","Of course! We encourage parents to visit with their child. Call us or use the form below to schedule a convenient time."]].map((q,i)=>`<details${i<1?" open":""}><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join(""));
+
+function route(){
+  let id=location.hash.slice(1);if(id==="enq")id="admissions";
+  if(!pages.some(p=>p[0]===id))id="home";
+  document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id===id));
+  H("#nav",pages.map(p=>`<a href="#${p[0]}" class="${p[0]===id?"on ":""}${p[0]==="admissions"?"adm":""}">${p[1]}</a>`).join(""));
+  document.title=(pages.find(p=>p[0]===id)[1])+" | Crestwood Play & Care";
+  if(location.hash==="#enq")setTimeout(()=>$("#enq").scrollIntoView({behavior:"smooth"}),50);else scrollTo(0,0);
+}
+addEventListener("hashchange",route);route();
+document.querySelectorAll("form").forEach(f=>f.addEventListener("submit",e=>{
+  e.preventDefault();
+  const body=[...new FormData(f)].map(([k,v])=>k+": "+v).join("\n");
+  location.href="mailto:crestwoodplaycare@gmail.com?subject="+encodeURIComponent(f.dataset.subj)+"&body="+encodeURIComponent(body);
+  f.querySelector(".ok").textContent="Opening your email app…";
+}));
+</script>
+</body>
+</html>
