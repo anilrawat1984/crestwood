@@ -20,3 +20,12 @@ both at a user/organization site URL and at a project site URL.
 - `js/` — navigation and page behavior
 
 The enquiry forms open the visitor's email application to send a message.
+
+## Search visibility
+
+The homepage includes a canonical URL, local school structured data, and
+preschool-focused page metadata. `robots.txt` and `sitemap.xml` are served from
+the site root. After publishing changes, verify `https://crestwoodplay.com/`
+in Google Search Console, submit `https://crestwoodplay.com/sitemap.xml`, and
+request indexing for the homepage. Keep the school's Google Business Profile
+name, address, phone numbers, hours and website consistent with the website.

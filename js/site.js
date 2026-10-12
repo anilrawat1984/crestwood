@@ -1,5 +1,14 @@
 const $=s=>document.querySelector(s),H=(id,h)=>$(id).innerHTML=h;
 const pages=[["home","Home"],["about","About Us"],["programs","Programs"],["facilities","Facilities"],["gallery","Gallery"],["contact","Contact Us"],["admissions","Admissions"]];
+const pageSeo={
+  home:["Preschool & Playschool in Raj Nagar Extension | Crestwood","Preschool, playschool and kindergarten in Raj Nagar Extension, Ghaziabad. Crestwood offers play-based Playgroup to UKG and day care at Palm Resort."],
+  about:["About Crestwood Play & Care | Ghaziabad Preschool","Meet the team and learn about Crestwood Play & Care, a preschool and day care in Palm Resort, Raj Nagar Extension, Ghaziabad."],
+  programs:["Preschool Programs: Playgroup to UKG | Crestwood","Explore play-based Playgroup, Nursery, LKG, UKG and day care programs at Crestwood in Raj Nagar Extension, Ghaziabad."],
+  facilities:["Preschool Facilities in Raj Nagar Extension | Crestwood","Explore Crestwood's classrooms, activity corner, play area and day care facilities in Raj Nagar Extension, Ghaziabad."],
+  gallery:["School Gallery | Crestwood Play & Care, Ghaziabad","See real photos of activities, classrooms, play areas and day care at Crestwood Play & Care in Raj Nagar Extension."],
+  contact:["Contact Crestwood Play & Care | Raj Nagar Extension","Contact Crestwood Play & Care at Palm Resort, Raj Nagar Extension, Ghaziabad, to ask about admissions or arrange a campus visit."],
+  admissions:["Preschool Admissions 2026–27 & 2027–28 | Crestwood","Ask about Playgroup, Nursery, LKG, UKG and day care admissions at Crestwood, a preschool in Raj Nagar Extension, Ghaziabad."]
+};
 const P=[["Day Care","1.5 yrs & above","Safe, caring & nurturing","🏠","#f5a623"],["Playgroup","2 – 3 yrs","Learn through play","🧸","#1565d8"],["Nursery","3 – 4 yrs","Early learning & fun","📖","#e0405a"],["LKG","4 – 5 yrs","Foundational skills & creativity","✏️","#2e9e3a"],["UKG","5 – 6 yrs","School readiness & growth","🎓","#5b4bdc"]];
 H("#stats",[["5","Programs from Playgroup to UKG + Day Care","#f5a623"],["100%","CCTV-covered premises","#2e9e3a"],["4","Dedicated zones: class, activity, play & rest","#1565d8"],["❤️","Caring & nurturing teachers","#e0405a"]].map(s=>`<div class="card stat" style="--c:${s[2]}"><b>${s[0]}</b><span>${s[1]}</span></div>`).join(""));
 H("#progCards",P.map(p=>`<a href="#programs" class="card tc" style="--c:${p[4]}"><div class="ic">${p[3]}</div><h3 style="color:${p[4]}">${p[0]}</h3><small><b>${p[1]}</b></small><p>${p[2]}</p></a>`).join(""));
@@ -24,7 +33,8 @@ function route(){
   if(!pages.some(p=>p[0]===id))id="home";
   document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id===id));
   H("#nav",pages.map(p=>`<a href="#${p[0]}" class="${p[0]===id?"on ":""}${p[0]==="admissions"?"adm":""}">${p[1]}</a>`).join(""));
-  document.title=(pages.find(p=>p[0]===id)[1])+" | Crestwood Play & Care";
+  document.title=pageSeo[id][0];
+  $('meta[name="description"]').content=pageSeo[id][1];
   if(location.hash==="#enq")setTimeout(()=>$("#enq").scrollIntoView({behavior:"smooth"}),50);else scrollTo(0,0);
 }
 addEventListener("hashchange",route);route();
