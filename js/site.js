@@ -32,7 +32,7 @@ function route(){
   let id=location.hash.slice(1);if(id==="enq")id="admissions";
   if(!pages.some(p=>p[0]===id))id="home";
   document.querySelectorAll(".pg").forEach(e=>e.classList.toggle("on",e.id===id));
-  H("#nav",pages.map(p=>`<a href="#${p[0]}" class="${p[0]===id?"on ":""}${p[0]==="admissions"?"adm":""}">${p[1]}</a>`).join(""));
+  H("#nav",pages.map(p=>`<a href="#${p[0]}" class="${p[0]===id?"on ":""}${p[0]==="admissions"?"adm":""}">${p[1]}</a>`).join("")+`<a href="music-school.html">Music School</a>`);
   document.title=pageSeo[id][0];
   $('meta[name="description"]').content=pageSeo[id][1];
   if(location.hash==="#enq")setTimeout(()=>$("#enq").scrollIntoView({behavior:"smooth"}),50);else scrollTo(0,0);
